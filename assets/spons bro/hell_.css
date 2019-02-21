@@ -33,38 +33,6 @@
     padding: 1px 5px;
     
 }
-.sponsorx{
-    color: white;
-    
-    min-height: 200px;
-    
-    
-}
-
-#gal1-3{
-    background-color: white;
-}
-
-.sponImg:hover{
-    opacity: .7;
-    
-    
-}
-#abb{
-    color: white;
-    text-decoration: underline;
-}
-
-.s1{
-        font-size: 20px;
-    font-family: 'Rubik', sans-serif;
-    color: white;
-}
-
-#abbb{
-    height: 200px;
-    width: 400px;
-    margin-left: 10px;}
 
 #sponsor-btn{
 	background-color: black;
@@ -81,10 +49,10 @@
 }
 
 #sponsor-btn:hover{
-	background-color: white;
+	background-color: black;
 	width:120px;
 	height: 120px;
-	color: black;
+	color: white;
 	font-family: Lato, sans-serif;
 	border: solid black 5px;
 	border-radius: 50%;
@@ -92,13 +60,12 @@
 }
 
 .sponsBrons{
-    height: auto;
+    height: 180px;
     margin-top: 0px;
-    color: black;
+    color: white;
     
     display: block;
-    /* background: linear-gradient(to right, #6f42c1 0%, #FF6C56 60%, #6f42c1 100%); */
-    background-color: white;
+    background: linear-gradient(to right, #6f42c1 0%, #FF6C56 60%, #6f42c1 100%);
    font-family: 'Open Sans', sans-serif;
 
     font-size: 1rem;
@@ -221,68 +188,5 @@
 @-webkit-keyframes fadeIn {
   100% {
     opacity: 1;
-  }
-}
-/*
-.broucher_button{
-  font-family:  'Aleo' , serif;
-  background-color: #f08e1d;
-  border: 2px solid white;
-  cursor: pointer;
-  border-radius: 8px;
-  color: white;
-}
-.broucher_button:hover{
-  background-color: white;
-  color: black;
-  border: 2px solid #d78423;
-}*/
-
-.button5 {
-  left: 43%;
-  position: relative;
-  border-radius: 4px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 18px;
-  padding: 10px;
-  width: 220px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button5 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button5 span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button5:hover span {
-  padding-right: 25px;
-}
-
-.button5:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-.button5:focus{
-    outline: none;
-}
-@media screen and (max-width: 750px) {
-  .button5{
-    left: 25%;
   }
 }
