@@ -58,7 +58,7 @@ font-weight:bold;font-size:48px;text-align:center;margin-bottom:20px
     background-color:#673AB7;
     top: 0;
     bottom: 0;
-    /* left: 50%; */
+    left: 50%;
     margin-left: -3px;
     box-shadow: 0 0 5px #000
 }
@@ -67,7 +67,7 @@ font-weight:bold;font-size:48px;text-align:center;margin-bottom:20px
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    /* width: 50%; */
+    width: 50%;
 }
 
 .timeline_container::after {
@@ -90,7 +90,7 @@ font-weight:bold;font-size:48px;text-align:center;margin-bottom:20px
 }
 
 .right {
-    /* left: 50%; */
+    left: 50%;
 }
 
 .left::before {
@@ -116,7 +116,7 @@ font-weight:bold;font-size:48px;text-align:center;margin-bottom:20px
     left: 30px;
     border: medium solid #6f42c1;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #d78423 transparent transparent;
+    border-color: transparent #6f42c1 transparent transparent;
 }
 
 .right::after {
@@ -124,11 +124,11 @@ font-weight:bold;font-size:48px;text-align:center;margin-bottom:20px
 }
 
 .timeline_content {
-    /* padding: 20px 30px; */
+    padding: 20px 30px;
     background-color: #6f42c1;
     /* font-family:  'Noto Serif', serif; */
     position: relative;
-    /* border-radius: 6px; */
+    border-radius: 6px;
     overflow-x: hidden;
     color:antiquewhite;
     font-size: 18px;
@@ -164,7 +164,7 @@ font-weight:bold;font-size:48px;text-align:center;margin-bottom:20px
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #d78423 transparent transparent;
+    border-color: transparent #6f42c1 transparent transparent;
   }
 
   .left::after, .right::after {
@@ -182,43 +182,15 @@ font-weight:bold;font-size:48px;text-align:center;margin-bottom:20px
 
 
 .timeline_image {
-    background:url('Timeline-01.png');background-repeat:no-repeat; background-position:center; background-size:contain;height: 100%;
+    background:url('placeholder2.jpg');background-repeat:no-repeat; background-position:center; background-size:contain;height: 100%;
 }
 
 @media screen and (max-width:600px){
     .timeline_image {
         height: 500px;
-        background-position: bottom;
     }
 }
 
-.timeline_heading {
-    padding: 10px 20px;
-    width:100%;background-color: #d78423;
-    font-family: 'Poppins', sans-serif;
-    font-size:20px;
-}
-.timeline_date {
-    /* position: relative;
-    bottom: 0px; */
-    width:100%;
-    padding: 0 5px 0 0;
-    background-color: #efefef66;
-    /* font-family: 'Oswald', sans-serif; */
-    font-family: 'rubik', sans-serif;
-    font-size:16px;
-    font-weight: 100;
-    text-align:right;
-    font-style: italic;
-
-}
-
-.timeline_text {
-    padding: 10px;
-    
-    font-size: 18px;
-
-}
     body, html {
       height: 100%;
     }
