@@ -1,12 +1,15 @@
 .container_gallery{
     height: 700px;
+    width: auto;
 }
 .gallery_image img{
     height: 600px;
+    margin-top: 2%;
+    
 }
 
 .button2 {
-    left: 43%;
+    left: 45%;
     position: absolute;
     display: inline-block;
     border: 2px solid #6f42c1;
@@ -69,6 +72,7 @@
     }
     .gallery_image img{
         height: 270px;
+        width: 100%;
     }
     .container_gallery{
         height: 370px;
