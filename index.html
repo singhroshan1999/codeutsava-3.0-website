@@ -61,13 +61,14 @@
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
-  <!-- <link rel="stylesheet" href="assets/gallery/style.css"> -->
+  <link rel="stylesheet" href="assets/gallery/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   <link rel="stylesheet" href="loading.css">
   <link rel="stylesheet" href="assets/faq/faq-style.css">
   <link rel="stylesheet" href="assets/metrics/metrics.css">
   <link rel="stylesheet" href="assets/gallery/gallery_style.css">
   <link rel="stylesheet" href="assets/devfolio/buttonn.css">
+  <!-- <link rel="stylesheet" href="assets/projects section/css/style.css"> -->
 
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
   <!-- ROSHAN: ADD THESE START -->
@@ -78,10 +79,10 @@
  <!--sethi-->
  <link rel="stylesheet" href="assets/spons bro_/hell.css">
 
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+ <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
+ <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
 
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 <!--prize-->
@@ -105,7 +106,7 @@
         <a href="https://codeutsava.zulipchat.com/login/">
 <div class="floater">
         <!-- <div style="padding:10px;width:45px;height:45px;background-image: url('assets/images/chat.png');background-size: 100%;margin-left: 54px"></div> -->
-    <div class="floater_circle">Chat</div>
+    <div class="floater_circle"><img src="assets/images/chatico.png" height="65" width="65"></div>
    
 </div>
 </a>
@@ -664,16 +665,20 @@ function next(){
 switch(timelinePage){
     case 0: document.getElementById("one").style.display = "none";
             document.getElementById("two").style.display = "block";
+            document.getElementById("next").style.backgroundColor = "#6f42c1";
+            document.getElementById("prev").style.backgroundColor = "#fff";
+            document.getElementById("next").style.color = "#fff";
+            document.getElementById("prev").style.color = "#000";
             timelinePage++;
             break;
-    case 1: document.getElementById("two").style.display = "none";
-            document.getElementById("three").style.display = "block";
-timelinePage++;
-            break;
-    case 2: document.getElementById("three").style.display = "none";
-            document.getElementById("four").style.display = "block";
-            timelinePage++;
-            break;
+//     case 1: document.getElementById("two").style.display = "none";
+//             document.getElementById("three").style.display = "block";
+// timelinePage++;
+//             break;
+    // case 2: document.getElementById("three").style.display = "none";
+    //         document.getElementById("four").style.display = "block";
+    //         timelinePage++;
+    //         break;
     default: 
             break;
    
@@ -683,16 +688,21 @@ function prev(){
 switch(timelinePage){
     case 1: document.getElementById("one").style.display = "block";
             document.getElementById("two").style.display = "none";
+            document.getElementById("prev").style.backgroundColor = "#d78423";
+            document.getElementById("next").style.backgroundColor = "#fff";
+            document.getElementById("prev").style.color = "#fff";
+            document.getElementById("next").style.color = "#000";
+            
             timelinePage--;
             break;
-    case 2: document.getElementById("two").style.display = "block";
-            document.getElementById("three").style.display = "none";
-timelinePage--;
-            break;
-    case 3: document.getElementById("three").style.display = "block";
-            document.getElementById("four").style.display = "none";
-            timelinePage--;
-            break;
+//     case 2: document.getElementById("two").style.display = "block";
+//             document.getElementById("three").style.display = "none";
+// timelinePage--;
+//             break;
+    // case 3: document.getElementById("three").style.display = "block";
+    //         document.getElementById("four").style.display = "none";
+    //         timelinePage--;
+    //         break;
     default: 
             break;
    
@@ -708,14 +718,18 @@ timelinePage--;
         </div>
         <div class=" col-md-6" style="margin:auto">
             <div class = "timeline" style="">
-
+                <div class="next_prev">
+                    <div class = "prev" id="prev" onclick="prev()">Day 1</div>
+            
+                    <div class = "next" id="next" onclick="next()">Day 2</div>
+                </div>
                 <div id="one">
-                    <div class="timeline_date one">Jan-14-2019</div>
+                    <div class="timeline_date one">11:15</div>
 
             <div class="timeline_container right one">
                 <div class="timeline_content">
-                    <div class="timeline_heading">Registration Begins</div>
-                    <div class="timeline_text">NIT Raipur is welcoming participants for doing magic by clicking keys. You don’t need to call Aliens like Hrithik in Koi Mil Gaya. But yeah, that would be cool!</div>
+                    <div class="timeline_heading">Opening Ceremony</div>
+                    <!-- <div class="timeline_text">NIT Raipur is welcoming participants for doing magic by clicking keys. You don’t need to call Aliens like Hrithik in Koi Mil Gaya. But yeah, that would be cool!</div> -->
                     <!-- <div class="timeline_date">Dec-29-2018</div> -->
                 </div>
             </div>
@@ -729,109 +743,67 @@ timelinePage--;
                             </div>
                 </div>
             </div> -->
-            <div class="timeline_date one">Jan-26-2019<br/>Jan-27-2019</div>
+            
+            <div class="timeline_date one">12:00</div>
             <div class="timeline_container right one">
                 <div class="timeline_content">
-                    <div class="timeline_heading">Workshops</div>
-                    <div class="timeline_text">You’re not a geek until you get to know about the current trends of the industry. Block-chain, Cloud Computing, get’em all here peeps!</div>
+                    <div class="timeline_heading">Hackathon Commencement</div>
+                    <!-- <div class="timeline_text">You’re not a geek until you get to know about the current trends of the industry. Block-chain, Cloud Computing, get’em all here peeps!</div> -->
 
                 </div>
             </div>
         
-            <div class="timeline_date two">Jan-27-2019</div>
+            <div class="timeline_date two">14:00</div>
             <div class="timeline_container right two">
                 <div class="timeline_content">
-                    <div class="timeline_heading">Declaration of Shortlisted Teams</div>
-                    <div class="timeline_text">In the cruel light of day, you are fortunately still you and that is all there is to remain happy. Little treadmills of hope in the abyss!</div>
+                    <div class="timeline_heading">Lunch</div>
+                    <!-- <div class="timeline_text">In the cruel light of day, you are fortunately still you and that is all there is to remain happy. Little treadmills of hope in the abyss!</div> -->
+                </div>
+            </div>
+
+            <div class="timeline_date two">21:00</div>
+            <div class="timeline_container right two">
+                <div class="timeline_content">
+                    <div class="timeline_heading">Dinner</div>
+                    <!-- <div class="timeline_text">In the cruel light of day, you are fortunately still you and that is all there is to remain happy. Little treadmills of hope in the abyss!</div> -->
                 </div>
             </div>
             </div>
             <div id="two">
-            <div class="timeline_date three">Jan-27-2019</div>
+            <div class="timeline_date three">9:30</div>
             <div class="timeline_container right three">
                 <div class="timeline_content">
-                    <div class="timeline_heading">Sacred Codes</div>
-                    <div class="timeline_text">Competitive programming contest on codechef.</div>
+                    <div class="timeline_heading">First Round Judging</div>
+                    <!-- <div class="timeline_text">Competitive programming contest on codechef.</div> -->
                 </div>
             </div>
-            <div class="timeline_date two">Jan-31-2019</div>
+            <div class="timeline_date two">14:00</div>
             <div class="timeline_container right two">
                 <div class="timeline_content">
-                    <div class="timeline_heading">End of Registration</div>
-                    <div class="timeline_text">That's&nbsp;<i>Dr. S-T-O-P </i>&nbsp;to you. You need to go back in therapy to fix your insomnia in interim. See you! </div>
+                    <div class="timeline_heading">Second Round Judging</div>
+                    <!-- <div class="timeline_text">That's&nbsp;<i>Dr. S-T-O-P </i>&nbsp;to you. You need to go back in therapy to fix your insomnia in interim. See you! </div> -->
                 </div>
             </div>
-            <div class="timeline_date two">Feb-01-2019</div>
+            <div class="timeline_date two">16:00</div>
             <div class="timeline_container right two">
                 <div class="timeline_content">
-                    <div class="timeline_heading">Final Declaration of Shortlisted Teams</div>
-                    <div class="timeline_text"><i>"God talks to us in stories."</i><br/>But you know what, we can reply in Boolean. So come code and get a chance to compete with God.</div>
+                    <div class="timeline_heading">Hacking Stops</div>
+                    <!-- <div class="timeline_text"><i>"God talks to us in stories."</i><br/>But you know what, we can reply in Boolean. So come code and get a chance to compete with God.</div> -->
                 </div>
             </div>
-            </div>
-            <div id="three">
-            <div class="timeline_date three">Feb-02-2019<br/>Feb-03-2019</div>
-            <div class="timeline_container right three">
+
+            <div class="timeline_date two">17:45</div>
+            <div class="timeline_container right two">
                 <div class="timeline_content">
-                    <div class="timeline_heading">Workshops</div>
-                    <div class="timeline_text">You’re not a geek until you get to know about the current trends of the industry. Block-chain, Cloud Computing, get’em all here peeps!!</div>
+                    <div class="timeline_heading">Result Declaration</div>
+                    <!-- <div class="timeline_text"><i>"God talks to us in stories."</i><br/>But you know what, we can reply in Boolean. So come code and get a chance to compete with God.</div> -->
                 </div>
             </div>
             
-            <div class="timeline_date one">Feb-08-2019</div>
-            <div class="timeline_container right one">
-                <div class="timeline_content">
-                    <div class="timeline_heading">Breaking Code</div>
-                    <div class="timeline_text"><i>"I did it for me. I liked it. I was good at it. And, I was really.... I was alive.” </i>
-                           <br /> <small>- Walter White </small><br />
-                            If you can relate to competitive programming in a similar way. Come feel alive on your screens.
-                            </div>
-                </div>
-            </div>
-            <div class="timeline_date three">Feb-09-2019<br/>Feb-10-2019</div>
-            <div class="timeline_container right three">
-                <div class="timeline_content">
-                    <div class="timeline_heading">Workshops</div>
-                    <div class="timeline_text">You’re not a geek until you get to know about the current trends of the industry. Block-chain, Cloud Computing, get’em all here peeps!!</div>
-                </div>
-            </div>
-            <!-- <div class="timeline_date three">Feb-10-2019</div>
-            <div class="timeline_container right three">
-                <div class="timeline_content">
-                    <div class="timeline_heading">Sacred Codes</div>
-                    <div class="timeline_text">Competitive programming contest on codechef.</div>
-                </div>
-            </div> -->
-        </div>
-        <div id="four">
-            <div class="timeline_date four">Feb-16-2019</div>
-            <div class="timeline_container right four">
-                <div class="timeline_content">
-                    <div class="timeline_heading">Hacking Kick starts</div>
-                    <div class="timeline_text">Don your favorite gears, have gloves on, get high and have coffee. The journey to the Moon is not going to be easy. May the Best Man Win.</div>
-                </div>
             </div>
 
-            <div class="timeline_date four">Feb-16-2019<br/>Feb-17-2019</div>
-            <div class="timeline_container right four">
-                <div class="timeline_content">
-                    <div class="timeline_heading">Technical Talks</div>
-                    <div class="timeline_text">Sometimes we need guidance. If you want to tease the sunshine with your code, you should know how to play your cards right. Here is a little joojoo for you all. </div>
-                </div>
-            </div>
-            <div class="timeline_date four">Feb-17-2019</div>
-            <div class="timeline_container right four">
-                <div class="timeline_content">
-                    <div class="timeline_heading">Announcement of Results</div>
-                    <div class="timeline_text">Getting this far, haven’t we all won, I mean, in life? </div>
-                </div>
-            </div>
-        </div>
-        <div class="next_prev">
-        <div class = "prev" onclick="prev()">Previous</div>
+ 
 
-        <div class = "next" onclick="next()">Next</div>
-    </div>
             <!-- <div class="timeline_container right">
                 <div class="timeline_content">
                     <div class="timeline_heading"></div>
@@ -1057,6 +1029,7 @@ timelinePage--;
 
 
 
+
 </div>
 </div>
 <!-- /mentors -->
@@ -1078,415 +1051,7 @@ timelinePage--;
 
 <!--sethi-->
 <!-- </section> -->
-<section style="background:#fff;margin-bottom: 50px">
-    <div id="container_theme">
-        <br>
-        <div class="mentors_heading" id="theme">Themes</div>
-        <div class="btn-toolbar">
-        <div class="row">
-            <div class="col-md-4">
-             
-                
-                
-                <a  class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter1"><img src="assets/images/blockchain.svg" >
-                
-                <!-- Button trigger modal -->
 
- 
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        
-                      <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">1.​Blockchain For Fighting insurance fraud </h5>
-                             
-                            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>-->
-                          </div>
-                          <style>
-                          .modal_pre {
-                              text-align:left;
-                              background-color:#fff;
-                          }
-                          </style>
-                          <div class="modal-body"><pre class="modal_pre">
-Indiaforensic Center of Studies estimates that Insurance frauds in India costs about $6.25 billion annually. 
-
-The sheer complexity of the modern insurance industry creates gaps in visibility that can be exploited to perpetrate fraud. Claims are shuffled from insurees to insurers and reinsurers in a slow, paperwork-driven process that has many moving parts. This creates opportunities for criminals to make multiple claims across different insurers for a single loss, or enables brokers to sell insurance policies and pocket the premiums. 
- 
-Storing and reconciling data sets of financial obligations, customer insights, fraud intelligence and ownership forms are the core of insurance claims operations. What if blockchain could manage shared intelligence to drive insurance claims processing efficiency, independent of fraud, thus bringing a structural change to the industry?  
- 
-Blockchain technology can enable better coordination between insurers to combat fraud. 
-
-On a distributed ledger, insurers could record permanent transactions, with granular access controls to protect data security. Storing claims information on a shared ledger would help insurers collaborate and identify suspicious behavior across the ecosystem. 
- 
-For example, by using blockchain, insurers could create receipts at different points in the claims process resulting in an immutable, auditable record of all claims activities, which could be revisited by all parties, customers, brokers, insurers, co-insurers and reinsurers including the regulators. This could lead to lower transaction costs, lower transaction risks and trustless computation. Such an approach could help further reduce, if not entirely prevent, fraud. 
- 
-The teams are expected to build a BlockChain based system and it <b> ​must use Ethereum platform ​</b>to prevent insurance frauds. 
-</pre>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-               
-          </a>      
-            <center><div class="themes">Blockchain</div></center>
-     
-                
-                
-                
-                
-                
-                
-  </div>
-  
-
-            
-            
-         
-                
-                 <div class="col-md-4">
-                       <a class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter2"><img src="assets/images/smartphone.svg" >
-                           
-                           
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                      <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">2.​Smart Locks</h5>
-                            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>-->
-                          </div>
-                          <div class="modal-body">
-                              <style>
-                              .modal_pre {
-                                  text-align:left;
-                                  background-color:#fff;
-                              }
-                              </style>
-                                <pre class="modal_pre">
-One of the major problems faced during transportation of goods is that they get tampered or sometimes unauthorized users get access to it leading to misuse and loss to the company. 
- 
-Incidents of theft from delivery vehicles are occurring nationwide and seem to be increasing. These incidents are causing havoc across the country’s supply chains leading to loss of hundreds of crore. 
- 
-In such case a <b>​Smart Lock (Digital Safe)</b>​ that protects valuable assets in transit and provides access to only authorized users could be useful. These locks should also be able to detect tampering and attempts to open by unauthorized persons and at unauthorized locations. 
-
-The admin of the system should be able to add authorized users who can have access to these locks and all the data should be stored in Cloud for future reference and ease of access by other concerned authorities whenever required. 
- 
-The teams are encouraged to innovate further to design and implement an IoT based system to ensure safety of goods.
-                         </pre> </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                          </div>
-                        </div>
-                      </div>
-                    </div> 
-
-
-                     </a>               
-                           
-            <center><div class="themes">IoT</div></center>
-                           
-                     
-              
-            </div>
-                     
-                
-                      <div class="col-md-4">
-                       <a class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter3"><img src="assets/images/artificial-intelligence.svg"  >
-                          
-                                                  <!-- Modal -->
-                        <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                          <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">3.Artificial Intelligence</h5>
-                                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>-->
-                              </div>
-                              <style>
-                              .modal_pre {
-                                  text-align:left;
-                                  background-color:#fff;
-                              }
-                              </style>
-                              <div class="modal-body"><pre class="modal_pre">
-Artificial intelligence is the intelligence displayed by computers by perceiving their environment. AI-based devices can take actions on their own to achieve a set goal. With technological advancements, machines are now capable of learning and solving problems just like humans. Can computers perform all tasks that require human intelligence in the future? Artificial intelligence professionals say that they can. Scientists predict that machines would start performing tasks such as translation, image or speech recognition, and decision making. 
- 
-Machine learning is an application of AI that discovers patterns in data and predicts outcomes without being explicitly programmed. Machine learning uses data to create, test, and train AI. 
- 
-<b><u>Sub Domain:</u></b>
-<b>1. HealthCare: </b>
-In the year ahead, and particularly in the next five to ten years, artificial intelligence is going to have a big impact on the healthcare industry and the ways in which healthcare related companies utilize AI. AI presents opportunities for application to take the data gathered from patients and be able to clinically innovate to improve patient outcomes to an even greater extent. AI improves reliability, predictability, and consistency with quality and patient safety. 
- 
- 
-<b>2. Customer Centric Retail: </b>
-Whenever a person buy something it creates a data footprints regarding the individual preferences, spending habits and preferred channels of individual consumers. Feeding these footprints into an AI-engine helps bring curated shopping journeys to mass audiences.​ ​Automated bots can create lifelike, seamless customer service experiences, addressing the consumer on their purchase history and preferences.  AI present opportunities for developing applications that bring in convenient for businesses to focus on customer driven sales as well as for customers to have cost related benefits.  
- 
- 
-Your goal is to harness the power of AI/ML to innovate and build your product that would be practically implementable, scalable and reliable for growth.Build your hack on <b>​any one</b> ​of the given sub-domains ,you can add more functionality to the above given sub-domains for brownie points!!. 
- 
-You can use publicly available datasets for the purpose of dataset but we would request you to kindly give credits to the source of dataset. 
-</pre>   </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>    
-
-                          
-                          
-                          
-                          </a>
-                          
-            <center><div class="themes">Artificial Intelligence</div></center>
-
-  
-                </div>
-               
-                
-                
-                
-            </div>
-                
-            
-            
-            
-        <div class="row">
-            <div class="col-md-4">
-                <a  class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter4"><img src="assets/images/android-device.svg">
-                
-                                             <!-- Modal -->
-                        <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                          <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">4.Android</h5>
-                                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>-->
-                              </div>
-                              <style>
-                              .modal_pre {
-                                  text-align:left;
-                                  background-color:#fff;
-                              }
-                              </style>
-                              <div class="modal-body"><pre class="modal_pre">
-Jivandeep Health Services is a startup which focuses on providing health services through social media impact. Ravindra Singh Kshatri says “We want to build a connected health service system to bring ease in organ donation, blood donation and so much more”. 
- 
-In case of emergency needs the most important life saver necessity is Blood. Blood Banks are the main providers of blood who receives blood from various donors, monitors the blood groups database of emergencies makes the available to the hospital whenever needed. The major problem faced by the main blood providers and the need is the availability of donor at right time. 
- 
-We hereby require a system to create a network of people who can help each other in need. We need a Blood Donation Management application (Android) where: 
- 
-• The Blood banks can timely update the Blood Stock availability. 
- 
-• Donor can register themselves to donate 
- 
-• User can find blood availability nearby him/her. 
- 
-• The urgency time of a blood requirement 
- 
-• User can quickly check for blood banks, hospitals or donor as per requirement matching a particular or related and reach out to them through the App. 
- 
-• Application tends to provide list of blood banks in user area. 
- 
-• A large number of blood donors are attracted using application. 
- 
-• Since almost everyone carries a mobile phone with him, it ensures instant location tracking and communication. 
- 
-• Registered user, who can donate blood can pledge him/her to donate and will be able to access the service. 
- 
-• In this application we using the GPS technology that will be used to trace the way to the blood bank. 
- 
-• The user will get the route to reach the desired location and he/she won't have to ask manually, in order to save time. 
- 
- 
-                           </pre>   </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>    
-
-                          
-                    
-                    
-                    
-                
-                </a>
-                
-                            <center><div class="themes">Android</div></center>
-
-            </div>
-            <div class="col-md-4">
-                <a class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter5"><img src="assets/images/ar-glasses.svg">
-                
-                                     <!-- Modal -->
-                        <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                          <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">5.Augmented reality​ (​AR​)</h5>
-                               <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                               </button> -->
-                              </div> 
-                              <style>
-                              .modal_pre {
-                                  text-align:left;
-                                  background-color:#fff;
-                                  font-family: 'Aleo', serif;
-                              }
-                              </style>
-                              <div class="modal-body"><pre class="modal_pre">
-<b>Augmented reality​ (​AR​</b>) is an interactive experience of a real-world environment where the objects that reside in the real-world are "augmented" by computer-generated perceptual information, sometimes across multiple sensory modalities, including visual, auditory, haptic, somatosensory, and​ ​olfactory.The primary value of augmented reality is that it brings components of the digital world into a person's perception of the real world, and does so not as a simple display of data, but through the integration of immersive sensations that are perceived as natural parts of an environment. 
-
-<b>Virtual reality​ (​VR​)</b> is an interactive computer-generated experience taking place within a simulated environment. It incorporates mainly auditory and visual feedback, but may also allow other types of sensory feedback. 
- 
-Mixing the real world with computer-generated images could change forever the way we interact with our surroundings. From driving to video games to healthcare, Augmented reality and Virtual reality could blend our perceptions and senses. 
- 
-Your challenge is to use this buzzing tech to build cool hacks, some inspirations to take are storytelling through AR/VR or building new forms of interfaces. This technology allows you to widen your horizon and build innovative hacks for uplifting the livings of fellow beings in general. 
-                        </pre>      </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>    
-
-                          
-                    
-                </a>
-                                            <center><div class="themes">AR-VR</div></center>
-
-            </div>
-            <div class="col-md-4">
-                <a class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter6"><img src="assets/images/mobile-web.svg">
-                
-                                 <!-- Modal -->
-                        <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                          <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">6.Web </h5>
-                                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>-->
-                              </div>
-                              <style>
-                              .modal_pre {
-                                  text-align:left;
-                                  background-color:#fff;
-                              }
-                              </style>
-                              <div class="modal-body"><pre class="modal_pre">
-A business incubator is a company that helps new and startup companies to develop by providing services such as management training or office space. In India, the business incubators are promoted in a varied fashion: as a Technology Business Incubator (TBI) and as Startup Incubators. TBI deals with technology business (mostly, consultancy and promoting technology related businesses) and Startup Incubator deals with promoting startups (with more emphasis on establishing new companies, scaling the businesses, prototyping, patenting, and so forth). The mission on creating specific innovations among the young minds of researchers via. 101 specialized incubators have been boosted in various parts of India through AIM-India. AIC@36Inc is one of the Atal Incubation Centers in India which has a total of 100 startups. To bring efficiency in management of Incubation center and to cater to startups’ requirements, it requires an Incubator Management system which should solve the following problems: 
-</pre>
-<TABLE style="border-collapse:collapse;" border=1>
-        <TR ALIGN="left" VALIGN="middle">
-            <Td style="width: 10%;"><B>S.No.</B></Td>
-            <Td><B>Problems</B></Td>
-            <Td><B>Description</B></Td>
-        </TR>
-        <TR ALIGN="left" VALIGN="middle">
-            <TD>1</TD>
-            <TD>Keeping track of Startups and mentoring startups</TD>
-        <TD>
-        <UL>
-            <LI>Startup Onboarding process: Application, shortlisting and selection
-            <LI>Startup management: Startup profile, startup documents, milestone tracking (Pending, work in progress, achieved) and report generation, important updates, event reminders, etc.
-            <li>Mentor/Investor database: Mentor/investor profiles, startup may request to connect to a mentor/investor
-            <li>Weekly startup report and monthly incubator report.
-            <li>Training videos
-            <li>Important documents – like Incubation rules, etc.
-        </UL>
-        </TD>
-        </TR>
-        <TR ALIGN="left" VALIGN="middle">
-            <TD>2</TD>
-            <TD>Startups' Profile, activity log and ease of Incubation services</TD>
-        <TD>
-        <UL>
-            <LI>Profile of startup, documents, target setting and achieving, milestones, pitch deck, training videos, reminders, event notifications, monthly work report, share profile to mentor/investor
-            <LI>support tickets
-            <LI>forum and threads
-            <LI>Access to mentor and investor profiles
-        </UL>
-        
-        </TD>
-        </TR>
-        <TR ALIGN="left" VALIGN="middle">
-            <TD>3</TD>
-            <TD>Incubator</TD>
-        <TD>
-        <UL>
-            <LI>Visitor database management
-            <LI>Co-work seat booking, payment gateway and invoice generation
-            <LI>Meeting room, Auditorium and Lab machines booking
-            <LI>Library management
-            <LI>Coffee tokens management
-            <LI>Rent tracking and reminder
-            <LI>Event: Upcoming and Past events (video/image database)
-        </UL>
-        
-        </TD>
-        </TR>
-        </TABLE>
-        
-  </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>    
-
-                          
-                
-                </a>
-            
-                        <center><div class="themes">Web</div></center>
-
-            
-            
-            </div>    
-            
-            
-            
-        </div>
-            
-            
-    </div>
-
-
-    </div>
-
-
-
-
-
-
-</section>
 <section class="mbr-gallery mbr-slider-carousel cid-raIhP9bIPa" id="gallery1-3">
 
 	<center>
@@ -1494,7 +1059,9 @@ A business incubator is a company that helps new and startup companies to develo
             </div>
 	</center>
 	<br>
-   
+
+    
+
 
     <div class="container" >
         <div class="container_inc">
@@ -1505,6 +1072,37 @@ A business incubator is a company that helps new and startup companies to develo
 
         </div>
         <br><br>
+        <center>
+            <div class="mentors_heading">Powered By
+                </div>
+        </center>
+        <!-- <div class="container_inc" style="text-align:center;padding-top:20px;padding-bottom:20px">
+
+
+            <a href="https://36inc.in/" id="Img36" target="_blank"><img src="assets/images/BlueBanyan Logo.jpg" width="400px"></a>
+
+
+      </div> -->
+      <div class="row">
+        <div class="col-md-4">
+
+         </div>
+           
+           
+          <div class="col-md-4">
+            <div class="sponsorx" style="margin-bottom:0;">
+                <a href="https://www.bluebanyan.co.in/" class="sponImg" id="Img6" target="_blank"><img src="assets/images/BlueBanyan Logo.jpg"></a>   
+        </div>
+        </div>
+
+         <div class="col-md-2">
+
+       </div>
+
+  
+
+    </div>
+        <br/><br/>
         <div class="mentors_heading">Sponsors</div>
         
         <div class="row">
@@ -1548,9 +1146,49 @@ A business incubator is a company that helps new and startup companies to develo
           </div>
 
 
+        </div>
 
+          <div class="row">
+            <div class="col-md-4">
+               <div class="sponsorx">
+                       <a href="https://skillenza.com/" class="sponImg" id="Img6" target="_blank"><img src="assets/images/skillenza.png"></a>   
+               </div>
+             </div>
+               
+               
+              <div class="col-md-4">
+&nbsp;
+            </div>
 
+             <div class="col-md-2">
+                 <div class="sponsorx codenicely" id="" >
+                       <a href="https://codenicely.in/" class="sponImg" id="Img6" target="_blank"><img src="assets/images/Code.png"></a>
 
+               </div>
+           </div>
+
+      
+
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+
+             </div>
+               
+               
+              <div class="col-md-4">
+                <div class="sponsorx">
+                    <a href="https://zebronics.com/" class="sponImg" id="Img6" target="_blank"><img src="assets/images/zebrobics.jpg"></a>   
+            </div>
+            </div>
+
+             <div class="col-md-2">
+
+           </div>
+
+      
+
+        </div>
         <div class="row">
              <div class="col-md-4">
                 <div class="sponsorx">
@@ -1655,6 +1293,8 @@ A business incubator is a company that helps new and startup companies to develo
               
     
     </div>
+
+    
 
 </section>
 

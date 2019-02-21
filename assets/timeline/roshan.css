@@ -119,11 +119,11 @@ font-weight:bold;font-size:70px;text-align:center;margin-bottom:20px
     left: 30px;
     border: medium solid #6f42c1;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #d78423 transparent transparent;
+    border-color: transparent #6f42c1 transparent transparent;
 }
 
 .right::after {
-    left: -16px;
+    left: -13px;
 }
 
 .timeline_content {
@@ -168,11 +168,11 @@ font-weight:bold;font-size:70px;text-align:center;margin-bottom:20px
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #d78423 transparent transparent;
+    border-color: transparent #6f42c1 transparent transparent;
   }
 
   .left::after, .right::after {
-    left: 15px;
+    left: 18px;
   }
   
    .right {
@@ -198,7 +198,7 @@ font-weight:bold;font-size:70px;text-align:center;margin-bottom:20px
 
 .timeline_heading {
     padding: 10px 20px;
-    width:100%;background-color: #d78423;
+    width:100%;background-color: #6f42c1;
     /* font-family: 'Poppins', sans-serif; */
     font-size:20px;
     font-family: 'Aleo', serif;
@@ -208,7 +208,7 @@ font-weight:bold;font-size:70px;text-align:center;margin-bottom:20px
     /* position: relative;
     bottom: 0px; */
     /* width:; */
-    width:110px;
+    width:50px;
     padding: 5px 5px 5px 5px;
     background-color: #d78423;
     /* font-family: 'Oswald', sans-serif; */
@@ -217,7 +217,7 @@ font-weight:bold;font-size:70px;text-align:center;margin-bottom:20px
     font-weight: 400;
     text-align:center;
     /* font-style: italic; */
-    left:-130px;
+    left:-69px;
     top:48px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -291,9 +291,9 @@ font-weight:bold;font-size:70px;text-align:center;margin-bottom:20px
 
 
     .prev {
-        width: 110px;
+        width: 50%;
         padding: 5px 5px 5px 5px;
-        background-color: #fff;
+        background-color: #d78423;
         border:1px solid #d78423;
         /* font-family: 'Oswald', sans-serif; */
         font-family: 'Aleo', serif;
@@ -302,20 +302,24 @@ font-weight:bold;font-size:70px;text-align:center;margin-bottom:20px
         text-align: center;
         /* font-style: italic; */
         /* left: 38px; */
-        top: -3px;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        top: -1px;
+        /* border-top-left-radius: 10px; */
+        /* border-bottom-left-radius: 10px; */
         position: relative;
-        border-radius: 10px;
+        /* border-radius: 10px; */
         color: black;
         z-index: 1;
         cursor: pointer;
+        color:#fff;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-right: 0px;
 
 
     
     }
     .next {
-        width: 110px;
+        width: 50%;
         padding: 5px 5px 5px 5px;
         background-color: #fff;
         border: 1px solid #6f42c1;
@@ -327,14 +331,17 @@ font-weight:bold;font-size:70px;text-align:center;margin-bottom:20px
         /* font-style: italic; */
         /* left: 500px; */
         top: -37px;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        /* border-top-left-radius: 10px; */
+        /* border-bottom-left-radius: 10px; */
         position: relative;
-        border-radius: 10px;
+        /* border-radius: 10px; */
         color: black;
         z-index: 1;
         float:right;
         cursor: pointer;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-left: 0px;
 
     
     }
@@ -353,3 +360,138 @@ font-weight:bold;font-size:70px;text-align:center;margin-bottom:20px
 #two { display: none}
 #three { display: none}
 #four { display: none}
+
+
+
+    /* collapse-start */
+    .plus {float: right;line-height: 55px;}
+    .ques {line-height: 55px;display:block;padding-left: 10px;padding-right: 10px;color:#006288; background-color:whitesmoke;
+      transition: background-color 0.5s,color 0.5s; transition-timing-function: ease-out;     border-left:10px solid #412d85;
+
+    }
+    .ques:hover{  background-color: #412d85;
+      color: whitesmoke;
+      transition: background-color 0.5s,color 0.5s;}
+    .quesCollapse {
+
+    margin-bottom: 20px;
+    
+    font-size: 16px;font-weight: bold; font-family: 'Aleo', serif;letter-spacing: 0.3px;
+    transition: background-color 1s,color s;
+    }
+
+    .quesCollapse a:hover{text-decoration: none}
+    .quesContent {background-color:white;padding: 0px;font-size: 16px;font-weight: normal;position: relative;;color: slategrey;margin-bottom: 20px;}
+    /* collapse end */
+    .social-btn {margin-right:10px;}
+    .social-btn-foot {color:black;margin: 5px;}
+    .btn-sp {margin-bottom: 10px;}
+
+    .dance{
+        position: relative;
+        float: right;
+    }
+    .bugee{
+            background: url('bugie.png');
+            /* width:100px; */
+            /* height:122px; */
+            height:427px;
+            width: 350px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            animation-name: up-down;
+            animation-direction:alternate;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+            animation-timing-function: linear;
+            /* float: right; */
+            /* animation-delay: 2s; */
+
+    }
+
+    .b_shadow {
+        background: url('shadow.png');
+        /* width: 100px; */
+        /* height: 10px; */
+        width: 350px;
+        height: 35px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+            animation-name: scale;
+            animation-direction:alternate;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+            animation-timing-function:linear;
+            /* animation-delay: 2s; */
+            /* float: right; */
+
+            /* top:11px; */
+            margin-top: 15px;
+    }
+
+    @media screen and (max-width:600px){
+    .bugee {
+width: 200px;
+height:244px ;
+left: 130px;
+
+    }
+    .b_shadow{
+        margin-top: 20px;
+left:50px;
+    }
+
+    .dance {
+        position: relative;
+        top:20px;
+    }
+    }
+    @keyframes up-down {
+        from {transform:translate(0,0px);}
+        to {transform:translate(0,20px);}
+    }
+    @keyframes scale {
+        from {transform: scale(1,1)}
+        to {transform: scale(1.3,1.3)}
+    }
+
+
+    .floater {
+        position: fixed;z-index: 2;right:0px;bottom:0px;bottom:0px;
+        font-family: 'Aleo';
+        font-size: 21px;
+        /* font-weight: bold; */
+        padding:0px;transition: padding 0.5s;
+    }
+
+    .floater:hover {
+       padding-bottom:20px;transition: padding 0.5s;
+    }
+
+    /* .floater_circle {
+    color: #000;
+        background: white;border:1px solid #412d85;width:80px;height:80px;line-height:3.7;text-align: center;border-radius:50% ;
+        transition: all 0.5s
+
+    } */
+
+    /* .floater_circle:hover {
+        /* background: #412d85; 
+        */
+        /* color: #fff;
+        transition: all 0.5s
+
+    }  */
+
+    .prize_text{
+        font-size: 18px;
+    }
+    
+    @media screen and (max-width:600px){
+    .codenicely {
+        width:60%;
+        text-align: center;
+    }
+}
