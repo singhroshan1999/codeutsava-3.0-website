@@ -78,18 +78,6 @@
  <!-- ROSHAN: ADD THESE END -->
  <!--sethi-->
  <link rel="stylesheet" href="assets/spons bro_/hell.css">
-
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-
-<style>
-    .plus {float: right;line-height: 55px;}
-</style>
-
 </head>
 <body >
 
@@ -108,7 +96,54 @@
 </section>
 <section class="engine"></section>
 
+<style>
+    .dance{
+        position: relative;
+        float: right;
+    }
+    .bugee{
+            background: url('desk web-01_cr_cr.jpg');
+            width:100px;
+            height:122px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            animation-name: up-down;
+            animation-direction:alternate;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+            animation-timing-function: linear;
+            /* float: right; */
+            /* animation-delay: 2s; */
 
+    }
+    .shadow {
+        background: url('desk web-01_cr_cr2.jpg');
+        width: 100px;
+        height: 10px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+            animation-name: scale;
+            animation-direction:alternate;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+            animation-timing-function:linear;
+            /* animation-delay: 2s; */
+            /* float: right; */
+
+            /* top:11px; */
+            margin-top: 11px;
+    }
+    @keyframes up-down {
+        from {transform:translate(0,0px);}
+        to {transform:translate(0,10px);}
+    }
+    @keyframes scale {
+        from {transform: scale(1,1)}
+        to {transform: scale(1.3,1.3)}
+    }
+</style>
 <section style="background-color: white" class="cid-qTkA127IK8 mbr-fullscreen mbr-parallax-background" id="header2-1">
 
 <!--button deepak--> <div class="wrapper_button">
@@ -145,16 +180,7 @@
             <i class="mbri-down mbr-iconfont"></i>
         </a>
     </div>
-    <div class="dance">
-        <div class="bugee">
-            <!-- <img src="desk web-01_cr_cr.jpg"> -->
-            &nbsp;
-        </div>
-        <div class="b_shadow">
-            <!-- <img src="desk web-01_cr_cr2.jpg"> -->
-            &nbsp;
-        </div>
-    </div>
+
 </section>
 <!-- ROSHAN ABOUT START -->
 
@@ -204,7 +230,58 @@
 <!--gallery end-->
 <!--project-->
 
+<div class="name">2.0 WINNERS AND PROJECTS</div>
+<div class="container-fluid_main-area">
+  <section class="cards">
 
+        <div class="card1">
+                <span>
+            <div class="thumbnail">
+            <img src="assets/projects section/logo/logo-4.png" alt="exceptions">
+            </div>
+            <div class="card-content">
+              <h2>TEAM - THE EXCEPTIONS</h2>
+
+            </div>
+            <!-- .card-content -->
+          </a>
+        </div>
+        <!-- .card -->
+
+        <div class="card2">
+            <span>
+            <div class="thumbnail">
+              <img src="assets/projects section/logo/logo-2.png" alt="meow">
+            </div>
+            <div class="card-content">
+              <h2>TEAM - CODE NICELY</h2>
+
+            </div>
+            <!-- .card-content -->
+          </a>
+        </div>
+        <!-- .card -->
+
+        <div class="card3">
+                <span>
+            <div class="thumbnail">
+              <img src="assets/projects section/logo/logo-3.png" alt="titans">
+            </div>
+            <div class="card-content">
+              <h2>TEAM - TITANS</h2>
+
+            </div>
+            <!-- .card-content -->
+          </a>
+        </div>
+        <!-- .card -->
+
+      </section>
+      <!-- .cards -->
+
+
+    <!-- .centered -->
+</div>
 
 <!-- WORK DONE BY ROSHAN STARTS HERE -->
 <!-- timeline -->
@@ -225,7 +302,6 @@ timelinePage++;
     case 2: document.getElementById("three").style.display = "none";
             document.getElementById("four").style.display = "block";
             timelinePage++;
-
             break;
     default: 
             break;
@@ -362,9 +438,9 @@ timelinePage--;
             </div>
         </div>
         <div class="next_prev">
-        <div id="prev" class = "prev" onclick="prev()">Previous</div>
+        <div class = "prev" onclick="prev()">Previous</div>
 
-        <div id="next" class = "next" onclick="next()">Next</div>
+        <div class = "next" onclick="next()">Next</div>
     </div>
             <!-- <div class="timeline_container right">
                 <div class="timeline_content">
@@ -385,130 +461,81 @@ timelinePage--;
 
 <!--FAQ-->
 <div class="faqname">FAQ</div>
-<div class="container-fluid_faq" >
+<div class="container-fluid_faq">
                     
             
     <div class="container-bot">
             <img src="assets/faq/FAQs-04-01.png">
          </div>
-         <div id="faqCollapse" style="max-width:630px" >
-            <div>
-              <div id="0" class="quesCollapse">
-                <div>
-              <a href="#" data-target="#qId" aria-controls="#qId"  data-toggle="collapse">
-            <div class="ques">What is the theme of the Hackathon?<i class="fa fa-plus plus"></i></div>
-            </a>
-            <div  id="qId" class="collapse quesContent" data-parent="#faqCollapse">
-              <div style="padding:30px ">
-                  We at CodeUtsava admire to assist our geeks to explore new domains, hence there isn’t any specific theme. However, once you have been shortlisted, we’ll let you know about the problem statements via the registered email ids.
-            </div> 
-            </div>
-            </div>
-            </div>
-            
-            <div id="1" class="quesCollapse">
-              <div>
-                <a href="#" data-target="#qId2" aria-controls="#qI2"  data-toggle="collapse">
-              <div class="ques">What will be provided during the Hackathon?<i class="fa fa-plus plus"></i></div>
-              </a>
-              <div  id="qId2" class="collapse quesContent" data-parent="#faqCollapse">
-                <div style="padding:30px ">
-                  CodeUtsava stands out among all hackathons for its hospitality. So gear yourselves up for some tasty, yummy food, exciting goodies, fun activities and ecstatic selfie booths to make your hacking experience a memorable one.
-              </div> 
-              </div>
-            </div>
-              </div>
-            
-              <div id="3" class="quesCollapse">
-                  <div>
-                <a href="#" data-target="#qId3" aria-controls="#qId3"  data-toggle="collapse">
-              <div class="ques">On what basis will the teams be shortlisted?<i class="fa fa-plus plus"></i></div>
-              </a>
-              <div  id="qId3" class="collapse quesContent" data-parent="#faqCollapse">
-                <div style="padding:30px ">
-                  Your resume says it all!! Hence, teams would be shortlisted on the basis of resume and Git-Hub profiles of the team members as uploaded at the time of registration.
-              </div> 
-              </div>
-              </div>
-              </div>
-            
-              <div id="4" class="quesCollapse">
-                  <div>
-                <a href="#" data-target="#qId4" aria-controls="#qId4"  data-toggle="collapse">
-              <div class="ques">What should be the team size?<i class="fa fa-plus plus"></i></div>
-              </a>
-              <div  id="qId4" class="collapse quesContent" data-parent="#faqCollapse">
-                <div style="padding:30px ">
-                  Teams must strictly consist of 3 members.
-              </div> 
-              </div>
-              </div>
-              </div>
-              <div id="5" class="quesCollapse">
-                  <div>
-                <a href="#" data-target="#qId5" aria-controls="#qId5"  data-toggle="collapse">
-              <div class="ques">What about accommodation and travel reimbursement?<i class="fa fa-plus plus"></i></div>
-              </a>
-              <div  id="qId5" class="collapse quesContent" data-parent="#faqCollapse">
-                <div style="padding:30px ">
-                  All the participants will be provided accomodation from 15th February,19 (morning) till 17th February,19 (evening) at our campus. All the participants, visiting us from outside Chhattisgarh would be provided with travel reimbursement. However, we would never want to lose out our developer due to such reasons. If you need any more help, do send us a mail and we’ll try to help you out in every way possible.        </div> 
-              </div>
-              </div>
-              </div>
-              <div id="6" class="quesCollapse">
-                  <div>
-                <a href="#" data-target="#qId6" aria-controls="#qId6"  data-toggle="collapse">
-              <div class="ques">Is there any specific eligibility criteria for the participants?<i class="fa fa-plus plus"></i></div>
-              </a>
-              <div  id="qId6" class="collapse quesContent" data-parent="#faqCollapse">
-                <div style="padding:30px ">
-                  Age is no bar for our developers at CodeUtsava. All that matters to us is the zeal to code and develop. Whether you are a college student, a startup enthusiast, a working professional, we would love to have you on board.        </div> 
-              </div>
-              </div>
-              </div>
-              <div id="7" class="quesCollapse">
-                  <div>
-                <a href="#" data-target="#qId7" aria-controls="#qId7"  data-toggle="collapse">
-              <div class="ques">Is there any prize for girl participants?<i class="fa fa-plus plus"></i></div>
-              </a>
-              <div  id="qId7" class="collapse quesContent" data-parent="#faqCollapse">
-                <div style="padding:30px ">
-                  The answer is a big “yes”. A seperate prize has been kept to increase the partcipation of female coders in our Hackathon.        </div> 
-              </div>
-              </div>
-              </div>
-              <div id="8" class="quesCollapse">
-                  <div>
-                <a href="#" data-target="#qId8" aria-controls="#qId8"  data-toggle="collapse">
-              <div class="ques">How to reach NIT Raipur?<i class="fa fa-plus plus"></i></div>
-              </a>
-              <div  id="qId8" class="collapse quesContent" data-parent="#faqCollapse">
-                <div style="padding:30px ">
-                  Raipur, capital of Chhattisgarh is well connected to all metro cities via railways as well flights. Further, regular auto-rickshaws, uber, and Ola commute between station/airport to our college.        </div>
-              </div>
-              </div>
-      
-            </div>
-            <div id="9" class="quesCollapse">
-              <div>
-            <a href="#" data-target="#qId9" aria-controls="#qId9"  data-toggle="collapse">
-          <div class="ques">For further queries you can contact us at:<i class="fa fa-plus plus"></i></div>
-          </a>
-          <div  id="qId9" class="collapse quesContent" data-parent="#faqCollapse">
-            <div style="padding:30px ">
-              Email Id - <mark>codeutsava@nitrr.ac.in</mark><br>
-              Contact No.  +918251082008        </div>
-          </div>
-          </div>
-        
-          </div>
-            
-          </div>
+<div class="tab blue">
+<input id="tab-one" type="radio" name="tabs2">
+<label for="tab-one">What is the theme of the Hackathon?</label>
+<div class="tab-content">
+  <p>We at CodeUtsava admire to assist our geeks to explore new domains, hence there isn’t any specific theme. However, once you have been shortlisted, we’ll let you know about the problem statements via the registered email ids.</p>
+</div>
+</div>
+<div class="tab blue">
+<input id="tab-two" type="radio" name="tabs2">
+<label for="tab-two">What will be provided during the Hackathon?</label>
+<div class="tab-content">
+        <p>CodeUtsava stands out among all hackathons for its hospitality. So gear yourselves up for some tasty, yummy food, exciting goodies, fun activities and ecstatic selfie booths to make your hacking experience a memorable one.</p>
+</div>
+</div>
+<div class="tab blue">
+<input id="tab-three" type="radio" name="tabs2">
+<label for="tab-three">On what basis will the teams be shortlisted?</label>
+<div class="tab-content">
+  <p>Your resume says it all!! Hence, teams would be shortlisted on the basis of resume and Git-Hub profiles of the team members as uploaded at the time of registration.</p>
+</div>
+</div>
+<div class="tab blue">
+    <input id="tab-four" type="radio" name="tabs2">
+    <label for="tab-four">What should be the team size?</label>
+    <div class="tab-content">
+      <p>Teams must strictly consist of 3 members.</p>
+    </div>
+  </div>
+  <div class="tab blue">
+        <input id="tab-five" type="radio" name="tabs2">
+        <label for="tab-five">What about accommodation and travel reimbursement?</label>
+        <div class="tab-content">
+          <p>All the participants will be provided accomodation from 15th February,19 (morning) till 17th February,19 (evening) at our campus. All the participants, visiting us from outside Chhattisgarh would be provided with travel reimbursement. However, we would never want to lose out our developer due to such reasons. If you need any more help, do send us a mail and we’ll try to help you out in every way possible.</p>
+        </div>
       </div>
+      <div class="tab blue">
+            <input id="tab-six" type="radio" name="tabs2">
+            <label for="tab-six">Is there any specific eligibility criteria for the participants?</label>
+            <div class="tab-content">
+              <p>Age is no bar for our developers at CodeUtsava. All that matters to us is the zeal to code and develop. Whether you are a college student, a startup enthusiast, a working professional, we would love to have you on board.</p>
+            </div>
+          </div>
+          <div class="tab blue">
+                <input id="tab-seven" type="radio" name="tabs2">
+                <label for="tab-seven">Is there any prize for girl participants?</label>
+                <div class="tab-content">
+                  <p>The answer is a big “yes”. A seperate prize has been kept to increase the partcipation of female coders in our Hackathon.</p>
+                </div>
+              </div>
+              <div class="tab blue">
+                    <input id="tab-eight" type="radio" name="tabs2">
+                    <label for="tab-eight">How to reach NIT Raipur?</label>
+                    <div class="tab-content">
+                      <p>Raipur, capital of Chhattisgarh is well connected to all metro cities via railways as well flights. Further, regular auto-rickshaws, uber, and Ola commute between station/airport to our college.</p>
+                    </div>
+                  </div>
+                  <div class="tab blue">
+                        <input id="tab-nine" type="radio" name="tabs2">
+                        <label for="tab-nine">For further queries you can contact us at:</label>
+                        <div class="tab-content">
+                          <p>Email Id - <mark>codeutsava@nitrr.ac.in</mark><br>
+                            Contact No.  +918251082008</p>
+                        </div>
+                      </div>
 
 </div>
 
 <!-- mentors -->
+
 
 
 <div id="about" class="container-fluid" style="background-color: white;padding-top: 40px;padding-bottom: 40px ">
@@ -861,17 +888,7 @@ CodeUtsava is a mega computer science event conducted annually by NIT Raipur. Co
     </div>
 </section>
 <!-- </div> -->
-<script>
-    function sign(orig){
-      $(orig.target).prev().find(".fa").toggleClass("fa-plus fa-minus");
-    }
-      $(document).ready(function(){
-  
-          $(".collapse").on('shown.bs.collapse',sign);
-    
-          $(".collapse").on('hidden.bs.collapse', sign);
-      });
-  </script>
+
   <!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/web/assets/jquery/jquery.min.js"></script> -->
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
