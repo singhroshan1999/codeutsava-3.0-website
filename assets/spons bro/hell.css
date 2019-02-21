@@ -65,8 +65,7 @@
     color: white;
     
     display: block;
-    /* background: linear-gradient(to right, #6f42c1 0%, #FF6C56 60%, #6f42c1 100%); */
-    background-color: #d78423;
+    background: linear-gradient(to right, #6f42c1 0%, #FF6C56 60%, #6f42c1 100%);
    font-family: 'Open Sans', sans-serif;
 
     font-size: 1rem;

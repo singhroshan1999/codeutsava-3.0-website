@@ -6,9 +6,13 @@ font-family: 'Aleo', serif;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 1.8em;
   text-align: center;
 
+}
+.centered {
+    margin: 0 auto;
+    padding: 0 1em;
 }
 
 @media screen and (min-width: 52em) {
@@ -33,51 +37,42 @@ Header styles minus menu
     }
 }
 .main-area{
-  height: auto;
+  height: 600px;
 }
 
 .cards{
   background-color: white;
   margin-top: 5%;
-  
 }
-/* card */
-.card1 {
+
+.card {
 	background: white;
   margin-bottom: 2em;
-  margin-left: 10px;
+  border : 2px solid #ddccff;	
+  border-radius: 5px;
+  
 }
-  .card2 {
-    background: white;
-    margin-bottom: 2em;
-    margin-right: 5px;
-  }
-    .card3 {
-      background: white;
-      margin-bottom: 2em;
-      margin-right: 10px;
-}
-/* card */
-.card1 a,.card2 a,.card3 a {
+
+.card a {
 	color: black;
 	text-decoration: none;
 }
 
-.card1 a:hover,.card2 a:hover,.card3 a:hover {
+.card a:hover {
 	/* box-shadow: 3px 3px 8px hsl(0, 0%, 70%); */
 }
 
 .card-content {
+  border-top: 0.5px solid #ddccff;
   padding: 1.4em;
   font-family: 'Roboto Condensed', sans-serif;
-  color:  #6f42c1;
+  cursor: pointer;
 }
 
 .card-content h2 {
 	margin-top: 0;
 	margin-bottom: .5em;
-  font-weight: normal;
-  text-align: center;
+	font-weight: normal;
 }
 
 .card-content p {
@@ -85,21 +80,9 @@ Header styles minus menu
   text-align: center;
 }
 
-img{
-  margin-top: 3%; 
-  margin-left: 10%;
-  width: 80%;
-  height: 350px;
-}
-.name{
-  font-family: 'Aleo' , serif;
+img {
+  width: 100%;
   height: auto;
-  font-size: 60px;
-  font-weight:bold;
-  margin-top: 2%;
-  color: white;
-  text-align: center;
-  background:#d78423;;
 }
 
 /* Flexbox styles */
@@ -110,10 +93,8 @@ img{
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  
 
-
-  .card1,.card2,.card3 {
+  .card {
     margin-bottom: 1em;
     display: flex;
     flex: 0 1 calc(50% - 0.5em);
@@ -125,8 +106,8 @@ img{
   .cards {
     margin-top: inherit;
   }
-
-  .card1,.card2,.card3 {
+  
+  .card {
     margin-bottom: 2em;
     display: flex;
     flex: 0 1 calc(33% - 0.5em);
@@ -134,3 +115,12 @@ img{
   }
 } /* mq 60em*/
 
+.name{
+  font-family: 'Aleo' , serif;
+  height: 150px;
+  font-size: 60px;
+  font-weight:bold;
+  margin-top: 2%;
+  color: #6f42c1;
+  text-align: center;
+}

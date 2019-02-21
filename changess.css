@@ -1,0 +1,26 @@
+.sponsorx{
+    color: white;
+    
+    min-height: 200px;
+    
+    
+}
+
+#gallery1-3{
+    background-color: white;
+}
+
+.sponImg:hover{
+    opacity: .7;
+    
+    
+}
+#Img1{
+    height: 150px;
+    width: 150px;
+}
+
+.s1{
+        font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+}
