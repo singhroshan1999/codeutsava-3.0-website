@@ -21,10 +21,6 @@
     
     
 }
-#Img36:hover{
- opacity: .7;
-}
-
 #Img1{
     height: 150px;
     width: 150px;
@@ -49,4 +45,16 @@
      
     }
     }
+#container_theme{
+    background-color: white;
+    
+}
+#theme{
+    color: #6f42c1;
+}
+.themes{
+    color: #6f42c1;
+    font-size: 25px;
+    padding-top: 0px;
+}
   
